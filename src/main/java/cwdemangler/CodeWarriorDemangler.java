@@ -13,7 +13,9 @@ import ghidra.app.util.demangler.Demangler;
 import ghidra.app.util.demangler.DemanglerOptions;
 import ghidra.program.model.listing.Program;
 import ghidra.program.model.util.TypeMismatchException;
+import ghidra.util.classfinder.ExtensionPointProperties;
 
+@ExtensionPointProperties(priority = 2)
 public final class CodeWarriorDemangler implements Demangler {    
     public final String CODEWARRIOR_DEMANGLE_PROP = "DemangleCW";
     
